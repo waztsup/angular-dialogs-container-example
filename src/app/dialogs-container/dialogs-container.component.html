@@ -1,0 +1,13 @@
+<div [class.d-none]="!containerClass" class="container">
+	<!-- dialogs go here -->
+	<app-modal-1 *ngIf="modals['modal-1'].opened" [params]="modals['modal-1'].params" (close)="onCloseClick('modal-1', $event)">
+	</app-modal-1>
+	<app-modal-2 *ngIf="modals['modal-2'].opened" [params]="modals['modal-2'].params" (close)="onCloseClick('modal-2', $event)">
+	</app-modal-2>
+	<app-modal-3 *ngIf="modals['modal-3'].opened" [params]="modals['modal-3'].params" (close)="onCloseClick('modal-3', $event)">
+	</app-modal-3>
+	<app-modal-4 *ngIf="modals['modal-4'].opened" [params]="modals['modal-4'].params" (close)="onCloseClick('modal-4', $event)">
+	</app-modal-4>
+	<app-modal-5 *ngIf="modals['modal-5'].opened" [params]="modals['modal-5'].params" (close)="onCloseClick('modal-5', $event)">
+	</app-modal-5>
+</div>
